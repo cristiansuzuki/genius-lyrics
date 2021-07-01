@@ -23,10 +23,13 @@ oauth_object = spotipy.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
 token_dict = oauth_object.get_access_token()
 token = token_dict['access_token']
 
+# Objeto do spotify criado
 spotify_object = spotipy.Spotify(auth=token)
 
+# Objeto do genius criado
 genius = lg.Genius(GENIUS_ACCESS_TOKEN)
 
+# Pega a musica que está tocando atualmente
 current = spotify_object.currently_playing()
 
 while True:
@@ -46,7 +49,7 @@ while True:
         print(lyrics)
         
         time.sleep(duracao)
-        
+    # Verifica se é um anuncio tocando
     elif status == 'ad':
         time.sleep(30)
         
