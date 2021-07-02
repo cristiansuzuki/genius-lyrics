@@ -32,6 +32,7 @@ genius = lg.Genius(GENIUS_ACCESS_TOKEN)
 # Pega a musica que está tocando atualmente
 current = spotify_object.currently_playing()
 
+# Função para continuar a rodar o script
 while True:
     current = spotify_object.currently_playing()
     status = current['currently_playing_type']
