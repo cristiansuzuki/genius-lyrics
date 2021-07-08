@@ -13,6 +13,7 @@ SPOTIPY_CLIENT_SECRET = os.getenv('SPOTIPY_CLIENT_SECRET')
 GENIUS_ACCESS_TOKEN = os.getenv('GENIUS_ACCESS_TOKEN')
 SPOTIPY_REDIRECT_URI = os.getenv('SPOTIPY_REDIRECT_URI')
 
+#variavel utilizada pelo spotify
 scope = 'user-read-currently-playing'
 
 oauth_object = spotipy.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
