@@ -24,7 +24,7 @@ oauth_object = spotipy.SpotifyOAuth(client_id=SPOTIPY_CLIENT_ID,
 token_dict = oauth_object.get_access_token()
 token = token_dict['access_token']
 
-# Objeto do spotify criado
+# Objeto do spotify criado !
 spotify_object = spotipy.Spotify(auth=token)
 
 # Objeto do genius criado
